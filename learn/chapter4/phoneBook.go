@@ -1,18 +1,32 @@
 package main
 
 import "fmt"
-func fib(n int)  int {
-    if n == 0 {
-        return 0
-    }
-    if n == 1 {
-        return 1
-    }
-    return fib(n-1)+fib(n-2)
-}
+
 func main() {
-    fmt.Print("Введите число: ")
-    var n int
-    fmt.Scanf("%d", &n)
-    fmt.Println(fib(n))
+    i:= 0
+    fmt.Print(
+      "1. Показать книгу"
+      "2. Добавить контакт"
+      "3.Удалить контакт"
+      "4. Найти контакт"
+      )
+    fmt.Scanf("%i",&i)
+    switch i{
+      case 1: 
     }
+    
+    var name string
+    fmt.Print("Введите имя: ")
+    fmt.Scanf("%s", &name)
+    var number string
+    fmt.Print("Введите телефон: ")
+    fmt.Scanf("%s", &number)
+    entry := map[string]string{
+        name: number,
+    }
+    
+    for i, v:= range entry{
+        fmt.Println( i,v)
+    }
+  
+}
