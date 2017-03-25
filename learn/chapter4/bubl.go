@@ -4,6 +4,9 @@ import "fmt"
 
 
 func main() {
+  var j int
+  var k int
+  var z float64
     var n int
     fmt.Println("Ведите длину среза")
     fmt.Scanf("%d",&n)
@@ -19,8 +22,8 @@ func main() {
         fmt.Println(x)
         }
       }
-    for j=1,j<len(x),j++ {
-      for k=0,k<(len(x)-1),k++ {
+    for j=1; j<len(x);j++{
+      for k=0; k<(len(x)-1); k++{
         if x[k]>x[k+1]{
            z = x[k]
            x[k] = x[k + 1]
@@ -29,6 +32,6 @@ func main() {
         }
       fmt.Println(x)
       } 
-    }
+  }
   
 
