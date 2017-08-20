@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-func makeOddGenerator() uint {
+func makeOddGenerator() func() uint {
     i := uint(0)
     return func() (ret uint) {
         ret = 2*i+1

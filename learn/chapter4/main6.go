@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 func main() {
-	 x := 0
-	evenOdd := func() (float32,bool){
+	var x int = 0
+	evenOdd := func() (int,bool){
 		x++
 		if x%2>0{
-			return float32(x)/2,false
+			return int(x)/2,false
 		}else{
-			return float32(x)/2,true
+			return int(x)/2,true
 		}
 	}
 	fmt.Println(evenOdd())

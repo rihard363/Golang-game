@@ -1,0 +1,14 @@
+	map
+		side
+		coordinate
+		seasons
+	Object
+		id
+		heals
+		armor
+		muve
+		step
+		attack
+		block
+		hide
+		unbreakable
